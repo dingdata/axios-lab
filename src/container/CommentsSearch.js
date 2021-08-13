@@ -10,6 +10,7 @@ class CommentsSearch extends Component {
       isLoading: false,
       comments: [],
       value: 0,
+      errorMessage: "",
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -62,7 +63,7 @@ class CommentsSearch extends Component {
         console.error(error);
         this.setState({
           isLoading: false,
-          errorMessage: `No comments available for postid:${this.state.value}`,
+          errorMessage: `No comments available for postid: ${this.state.value}`,
         });
       });
   }
@@ -88,8 +89,12 @@ class CommentsSearch extends Component {
           <input type="submit" value="Submit" />
         </form>
         {/* <DisplayComments comments={this.state.comments}></DisplayComments> */}
-        <div>{this.state.isLoading ? <Loader /> : this.printComments()}</div>
-        <div>{this.state.errorMessage}</div>
+        {!this.state.errorMessage && (
+          <div>{this.state.isLoading ? <Loader /> : this.printComments()}</div>
+        )}
+        {this.state.errorMessage && (
+          <h3 className="error"> {this.state.errorMessage} </h3>
+        )}
       </div>
     );
   }
