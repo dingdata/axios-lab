@@ -88,19 +88,11 @@ class CommentsSearch extends Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-<<<<<<< HEAD
-        {/* <DisplayComments comments={this.state.comments}></DisplayComments> */}
-=======
->>>>>>> 5424ff0 (New Error Handling)
         {!this.state.errorMessage && (
           <div>{this.state.isLoading ? <Loader /> : this.printComments()}</div>
         )}
         {this.state.errorMessage && (
-<<<<<<< HEAD
-          <h3 className="error"> {this.state.errorMessage} </h3>
-=======
           <div className="err">{this.state.errorMessage}</div>
->>>>>>> 5424ff0 (New Error Handling)
         )}
       </div>
     );
