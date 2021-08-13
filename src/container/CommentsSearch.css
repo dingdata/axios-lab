@@ -1,0 +1,12 @@
+.err {
+  border-color: lightpink;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px 2px 2px 2px;
+  margin: 5px;
+  background-color: lightpink;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-content: center;
+}
