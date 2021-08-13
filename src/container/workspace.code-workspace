@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../fetch-react-lab"
+    },
+    {
+      "path": "../../../hello-world"
+    },
+    {
+      "path": "../../../pokemon-react-lab"
+    }
+  ]
+}

@@ -45,7 +45,7 @@ class CommentsSearch extends Component {
   handleSubmit(event) {
     alert("A name was submitted: " + this.state.value);
     event.preventDefault();
-    this.setState({ isLoading: true });
+    this.setState({ isLoading: true, errorMessage: "" });
 
     axios(
       `https://jsonplaceholder.typicode.com/comments?postId=${this.state.value}`

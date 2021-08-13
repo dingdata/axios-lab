@@ -1,4 +1,6 @@
 .err {
+  display: flex;
+  justify-content: center;
   border-color: lightpink;
   border-width: 1px;
   border-style: solid;
@@ -7,6 +9,4 @@
   background-color: lightpink;
   width: 50%;
   height: 50%;
-  display: flex;
-  align-content: center;
 }
